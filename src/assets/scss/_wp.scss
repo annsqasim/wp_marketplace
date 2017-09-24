@@ -1,0 +1,180 @@
+// Author: Anns Qasim
+
+@import "../fonts/stylesheet.css";
+
+// General Styling
+body{
+  background-color: #303078;
+  font-family: 'Helvetica Neue LT Std';
+
+  .container{
+    max-width: 100%;
+    margin: 0px 20px;
+  }
+
+  .section{
+    background-color: #fff;
+    padding: 4rem 0rem;
+
+    h1,h2,h3,h4,h5,h6{
+      color: #202020;
+    }
+
+    p{
+      color: #333;
+    }
+  }
+}
+
+.light-btn{
+  background-color: #fff;
+  color: #303078;
+  padding: 1rem 2rem;
+  transition: all ease-in 0.3s;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+
+  &:hover{
+    background-color: #303078;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+}
+
+// Page Styling
+header{
+  .bg{
+    background-image: url('../img/header_bg.jpg');
+    background-color: #303078;
+    background-blend-mode: color-burn;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+
+    .top-bar{
+      background-color: transparent;
+
+      .menu-text{
+        display: inline-block;
+      }
+
+      .opt{
+        display: inline-block;
+        a{
+          display: inline-block;
+          color: #fff;
+        }
+      }
+    }
+
+    > .header-row{
+      height: 100%;
+      display: table;
+    }
+
+    .header-container{
+      text-align: center;
+      vertical-align: middle;
+      display: table-cell;
+
+      .header-section{
+
+        h1{
+          font-size: 40px;
+          font-weight: 500;
+          margin-bottom: 2rem;
+          padding: 0rem 5rem;
+        }
+
+        p{
+          font-weight: 300;
+          margin-bottom: 3rem;
+          padding: 0rem 4rem;
+          line-height: 1.6;
+        }
+      }
+
+    }
+  }
+}
+
+#buyer{
+  .buyer-info{
+    text-align: center;
+
+    h2{
+      font-size: 32px;
+      margin-bottom: 3rem;
+    }
+
+    h3{
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-top: 2rem;
+    }
+
+    p{
+      font-size: 16px;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .features-section{
+      .feature{
+        margin: 2rem 0rem;
+        min-height: 75px;
+
+        &:last-child{
+          float: left;
+        }
+      }
+  }
+}
+
+.newsletter{
+  text-align: center;
+  color: #fff;
+  padding: 4rem 0rem;
+  h2{
+    font-size: 24px;
+    font-weight: 500px;
+  }
+
+  input[type="text"] {
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    width: 150px;
+    margin: 1rem;
+
+    &:focus{
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .light-btn{
+    border: none;
+    width: 143px;
+    border-radius: 30px;
+    padding: 1.3rem 0rem;
+    height: 60px;
+    margin-top: 0px;
+
+    &:hover{
+      border: 1px solid #fff;
+    }
+  }
+}
+
+.pricing-section.container{
+  background-color: #f9f9f9;
+}
