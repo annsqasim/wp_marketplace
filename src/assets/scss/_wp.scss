@@ -230,6 +230,23 @@ header{
     }
   }
 
+  .drop{
+    margin: 3rem 0rem 1rem 0rem;
+    a{
+      position: relative;
+      color: #303078;
+      &:after{
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 5px;
+        background-image: url('../img/down-arrow.png');
+        right: -25px;
+        top: 8px;
+      }
+    }
+  }
+
   .table{
     background-color: #fff;
     box-shadow: 2px 2px 2px;
@@ -246,6 +263,16 @@ header{
       margin-bottom: 1rem;
     }
 
+    &:first-child{
+      ul{
+        li{
+          &:before{
+            content: '';
+            background: none;
+          }
+        }
+      }
+    }
     ul{
       list-style: none;
       margin-left: 0px;
@@ -253,6 +280,18 @@ header{
       li{
         font-size: 18px;
         margin: 0.5rem 0rem;
+        position: relative;
+
+
+        &:before{
+          content: '';
+          position: absolute;
+          width: 50px;
+          height: 1px;
+          background-image: url('../img/dotted-line.png');
+          left: -64px;
+          top: 13px;
+        }
       }
     }
     &:last-child{
