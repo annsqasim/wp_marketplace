@@ -73,6 +73,14 @@ header{
       }
     }
 
+    .navbar-fixed{
+      position: fixed;
+      width: 100%;
+      top: 0px;
+      left: 0px;
+      background-color: #303078;
+    }
+
     > .header-row{
       height: 100%;
       display: table;
@@ -328,7 +336,7 @@ footer{
       .title-bar{
         background-color: #303078;
       }
-      
+
       .top-bar {
         .opt{
           margin-left: 4rem;
